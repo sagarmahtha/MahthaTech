@@ -1,0 +1,25 @@
+[
+  {
+    "id": "mob001",
+    "category": "mobiles",
+    "title": "Latest Smartphone XYZ",
+    "summary": "Overview of Smartphone XYZ with cool features...",
+    "content": "<p>The <strong>Latest Smartphone XYZ</strong> features a sleek design, advanced camera capabilities, and long-lasting battery.</p>",
+    "image": "assets/images/mobile1.jpg",
+    "date": "2025-09-01",
+    "featured": true,
+    "trending": false
+  },
+  {
+    "id": "lap001",
+    "category": "laptops",
+    "title": "Top Laptop ABC Review",
+    "summary": "Why Laptop ABC is best for developers...",
+    "content": "<p>Laptop ABC is known for its powerful processor and vibrant display, making it the preferred choice for developers.</p>",
+    "image": "assets/images/laptop1.jpg",
+    "date": "2025-09-03",
+    "featured": true,
+    "trending": true
+  }
+  // Add more articles similarly
+]
