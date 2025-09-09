@@ -1,0 +1,16 @@
+body{margin:0;font-family:Arial,sans-serif;background:#fff;color:#333;}
+.container{padding:1rem;}
+.site-header,.site-footer{background:#222;color:#fff;padding:1rem;}
+.logo a{color:#fff;text-decoration:none;font-size:1.5rem;font-weight:bold;}
+.main-nav{display:flex;gap:1rem;}
+.main-nav a{color:#fff;text-decoration:none;}
+.header-actions{margin-left:auto;display:flex;align-items:center;gap:.5rem;}
+.hamburger{cursor:pointer;display:none;flex-direction:column;gap:3px;}
+.hamburger span{display:block;width:20px;height:2px;background:#fff;}
+.article-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;}
+.article-card{border:1px solid #ddd;border-radius:6px;overflow:hidden;cursor:pointer;background:#fff;}
+.article-card img{width:100%;height:150px;object-fit:cover;}
+.article-card .content{padding:.5rem;}
+.article-list.mini .article-card img{height:80px;}
+.search-results{position:absolute;background:#fff;color:#000;border:1px solid #ccc;z-index:999;}
+@media(max-width:768px){.main-nav{display:none;flex-direction:column;}.main-nav.open{display:flex;}.hamburger{display:flex;}}
