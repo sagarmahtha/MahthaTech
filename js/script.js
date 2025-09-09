@@ -1,17 +1,46 @@
 async function loadPartial(id,url){
   const r=await fetch(url);const t=await r.text();document.getElementById(id).innerHTML=t;attachHeaderHandlers();
 }
+// function attachHeaderHandlers(){
+//   const hamb=document.getElementById('hamburger');
+//   const nav=document.querySelector('.main-nav');
+//   if(hamb&&nav){
+//     hamb.addEventListener('click',()=>{
+//       nav.classList.toggle('open');
+//       const expanded=hamb.getAttribute('aria-expanded')==='true';
+//       hamb.setAttribute('aria-expanded',String(!expanded));
+//     });
+//   }
+// }
 function attachHeaderHandlers(){
-  const hamb=document.getElementById('hamburger');
-  const nav=document.querySelector('.main-nav');
-  if(hamb&&nav){
-    hamb.addEventListener('click',()=>{
+  const hamb = document.getElementById('hamburger');
+  const nav = document.querySelector('.main-nav');
+  const themeToggle = document.getElementById('theme-toggle');
+
+  if(hamb && nav){
+    hamb.addEventListener('click', ()=>{
       nav.classList.toggle('open');
-      const expanded=hamb.getAttribute('aria-expanded')==='true';
-      hamb.setAttribute('aria-expanded',String(!expanded));
+      const expanded = hamb.getAttribute('aria-expanded') === 'true';
+      hamb.setAttribute('aria-expanded', String(!expanded));
     });
   }
+
+  if(themeToggle){
+    themeToggle.addEventListener('click', ()=>{
+      document.body.classList.toggle('dark-mode');
+      // Save preference in localStorage
+      const isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    });
+
+    // Apply saved theme on load
+    if(localStorage.getItem("theme") === "dark"){
+      document.body.classList.add("dark-mode");
+    }
+  }
 }
+
+
 async function loadArticles(){
   const r=await fetch('data/articles.json');const articles=await r.json();
   const page=document.body.dataset.page;
