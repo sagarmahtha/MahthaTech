@@ -1,0 +1,24 @@
+* {margin:0;padding:0;box-sizing:border-box;}
+body {font-family:Arial, sans-serif;line-height:1.6;background:#fff;color:#222;}
+a {text-decoration:none;color:inherit;}
+.container {width:90%;max-width:1200px;margin:20px auto;}
+header.site-header {background:#222;color:#fff;position:relative;}
+header .inner {display:flex;align-items:center;justify-content:space-between;padding:10px 20px;}
+.logo a {color:#fff;font-size:20px;font-weight:bold;}
+.main-nav {display:flex;gap:15px;align-items:center;}
+.main-nav input {padding:5px;}
+.main-nav button {background:none;border:none;color:#fff;cursor:pointer;}
+#hamburger {display:none;background:none;border:none;color:#fff;font-size:20px;}
+.search-results {background:#fff;position:absolute;top:100%;left:0;right:0;z-index:1000;max-height:200px;overflow:auto;}
+.article-list {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;margin-top:15px;}
+.article-card {border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fafafa;}
+.article-card img {width:100%;height:auto;display:block;}
+.article-card h4 {padding:10px;font-size:16px;}
+.article-card p {padding:0 10px 10px;font-size:14px;}
+footer.site-footer {background:#333;color:#fff;padding:20px;}
+footer a {color:#fff;}
+@media(max-width:768px){
+  .main-nav {display:none;flex-direction:column;gap:10px;background:#222;position:absolute;top:60px;left:0;width:100%;padding:10px;}
+  .main-nav.open {display:flex;}
+  #hamburger {display:block;}
+}
