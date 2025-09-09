@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function renderHomepage(articles) {
-  renderArticles(filterByKey(articles, 'featured', true, 6), '#featured-section .articles-container');
+  renderArticles(filterByKey(articles, 'featured', true, 1), '#featured-section .articles-container');
   renderArticles(filterByKey(articles, 'trending', true, 6), '#trending-section .articles-container');
   renderArticles(filterByKey(articles, 'category', 'mobiles', 6), '#mobiles-section .articles-container');
   renderArticles(filterByKey(articles, 'category', 'laptops', 6), '#laptops-section .articles-container');
