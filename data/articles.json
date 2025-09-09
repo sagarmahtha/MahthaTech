@@ -1,20 +1,20 @@
 [
   {
     "id": 1,
-  "title": "Mobiles Article 1",
-  "description": "Short description of mobiles article 1.",
-  "content": "Full content of mobiles article 1.",
-  "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
-  "category": "mobiles",
-  "featured": true,
-  "trending": true
+    "title": "Mobiles Article 1",
+    "description": "Short description of mobiles article 1.",
+    "content": "Full content of mobiles article 1.",
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    "category": "mobiles",
+    "featured": true,
+    "trending": false
   },
   {
     "id": 2,
     "title": "Mobiles Article 2",
     "description": "Short description of mobiles article 2.",
     "content": "Full content of mobiles article 2.",
-    "image": "https://source.unsplash.com/600x400/?mobiles,2",
+    "image": "https://images.unsplash.com/photo-1512499617640-c2f999223f97",
     "category": "mobiles",
     "featured": false,
     "trending": true
@@ -24,7 +24,7 @@
     "title": "Mobiles Article 3",
     "description": "Short description of mobiles article 3.",
     "content": "Full content of mobiles article 3.",
-    "image": "https://source.unsplash.com/600x400/?mobiles,3",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     "category": "mobiles",
     "featured": false,
     "trending": false
@@ -34,7 +34,7 @@
     "title": "Mobiles Article 4",
     "description": "Short description of mobiles article 4.",
     "content": "Full content of mobiles article 4.",
-    "image": "https://source.unsplash.com/600x400/?mobiles,4",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
     "category": "mobiles",
     "featured": false,
     "trending": true
@@ -44,7 +44,7 @@
     "title": "Mobiles Article 5",
     "description": "Short description of mobiles article 5.",
     "content": "Full content of mobiles article 5.",
-    "image": "https://source.unsplash.com/600x400/?mobiles,5",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
     "category": "mobiles",
     "featured": false,
     "trending": false
@@ -54,7 +54,7 @@
     "title": "Mobiles Article 6",
     "description": "Short description of mobiles article 6.",
     "content": "Full content of mobiles article 6.",
-    "image": "https://source.unsplash.com/600x400/?mobiles,6",
+    "image": "https://images.unsplash.com/photo-1527434000548-1693ccd1d9aa",
     "category": "mobiles",
     "featured": false,
     "trending": true
@@ -64,7 +64,7 @@
     "title": "Mobiles Article 7",
     "description": "Short description of mobiles article 7.",
     "content": "Full content of mobiles article 7.",
-    "image": "https://source.unsplash.com/600x400/?mobiles,7",
+    "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91",
     "category": "mobiles",
     "featured": false,
     "trending": false
@@ -74,7 +74,7 @@
     "title": "Mobiles Article 8",
     "description": "Short description of mobiles article 8.",
     "content": "Full content of mobiles article 8.",
-    "image": "https://source.unsplash.com/600x400/?mobiles,8",
+    "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
     "category": "mobiles",
     "featured": false,
     "trending": true
@@ -84,7 +84,7 @@
     "title": "Mobiles Article 9",
     "description": "Short description of mobiles article 9.",
     "content": "Full content of mobiles article 9.",
-    "image": "https://source.unsplash.com/600x400/?mobiles,9",
+    "image": "https://images.unsplash.com/photo-1517433456452-f9633a875f6f",
     "category": "mobiles",
     "featured": false,
     "trending": false
@@ -94,7 +94,7 @@
     "title": "Mobiles Article 10",
     "description": "Short description of mobiles article 10.",
     "content": "Full content of mobiles article 10.",
-    "image": "https://source.unsplash.com/600x400/?mobiles,10",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
     "category": "mobiles",
     "featured": false,
     "trending": true
@@ -104,7 +104,7 @@
     "title": "Laptops Article 1",
     "description": "Short description of laptops article 1.",
     "content": "Full content of laptops article 1.",
-    "image": "https://source.unsplash.com/600x400/?laptops,1",
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
     "category": "laptops",
     "featured": false,
     "trending": false
@@ -114,7 +114,7 @@
     "title": "Laptops Article 2",
     "description": "Short description of laptops article 2.",
     "content": "Full content of laptops article 2.",
-    "image": "https://source.unsplash.com/600x400/?laptops,2",
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
     "category": "laptops",
     "featured": false,
     "trending": true
@@ -124,7 +124,7 @@
     "title": "Laptops Article 3",
     "description": "Short description of laptops article 3.",
     "content": "Full content of laptops article 3.",
-    "image": "https://source.unsplash.com/600x400/?laptops,3",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     "category": "laptops",
     "featured": false,
     "trending": false
@@ -134,7 +134,7 @@
     "title": "Laptops Article 4",
     "description": "Short description of laptops article 4.",
     "content": "Full content of laptops article 4.",
-    "image": "https://source.unsplash.com/600x400/?laptops,4",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
     "category": "laptops",
     "featured": false,
     "trending": true
@@ -144,7 +144,7 @@
     "title": "Laptops Article 5",
     "description": "Short description of laptops article 5.",
     "content": "Full content of laptops article 5.",
-    "image": "https://source.unsplash.com/600x400/?laptops,5",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
     "category": "laptops",
     "featured": false,
     "trending": false
@@ -154,7 +154,7 @@
     "title": "Laptops Article 6",
     "description": "Short description of laptops article 6.",
     "content": "Full content of laptops article 6.",
-    "image": "https://source.unsplash.com/600x400/?laptops,6",
+    "image": "https://images.unsplash.com/photo-1527434000548-1693ccd1d9aa",
     "category": "laptops",
     "featured": false,
     "trending": true
@@ -164,7 +164,7 @@
     "title": "Laptops Article 7",
     "description": "Short description of laptops article 7.",
     "content": "Full content of laptops article 7.",
-    "image": "https://source.unsplash.com/600x400/?laptops,7",
+    "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91",
     "category": "laptops",
     "featured": false,
     "trending": false
@@ -174,7 +174,7 @@
     "title": "Laptops Article 8",
     "description": "Short description of laptops article 8.",
     "content": "Full content of laptops article 8.",
-    "image": "https://source.unsplash.com/600x400/?laptops,8",
+    "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
     "category": "laptops",
     "featured": false,
     "trending": true
@@ -184,7 +184,7 @@
     "title": "Laptops Article 9",
     "description": "Short description of laptops article 9.",
     "content": "Full content of laptops article 9.",
-    "image": "https://source.unsplash.com/600x400/?laptops,9",
+    "image": "https://images.unsplash.com/photo-1517433456452-f9633a875f6f",
     "category": "laptops",
     "featured": false,
     "trending": false
@@ -194,7 +194,7 @@
     "title": "Laptops Article 10",
     "description": "Short description of laptops article 10.",
     "content": "Full content of laptops article 10.",
-    "image": "https://source.unsplash.com/600x400/?laptops,10",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
     "category": "laptops",
     "featured": false,
     "trending": true
@@ -204,7 +204,7 @@
     "title": "Gadgets Article 1",
     "description": "Short description of gadgets article 1.",
     "content": "Full content of gadgets article 1.",
-    "image": "https://source.unsplash.com/600x400/?gadgets,1",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
     "category": "gadgets",
     "featured": false,
     "trending": false
@@ -214,7 +214,7 @@
     "title": "Gadgets Article 2",
     "description": "Short description of gadgets article 2.",
     "content": "Full content of gadgets article 2.",
-    "image": "https://source.unsplash.com/600x400/?gadgets,2",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
     "category": "gadgets",
     "featured": false,
     "trending": true
@@ -224,7 +224,7 @@
     "title": "Gadgets Article 3",
     "description": "Short description of gadgets article 3.",
     "content": "Full content of gadgets article 3.",
-    "image": "https://source.unsplash.com/600x400/?gadgets,3",
+    "image": "https://images.unsplash.com/photo-1527434000548-1693ccd1d9aa",
     "category": "gadgets",
     "featured": false,
     "trending": false
@@ -234,7 +234,7 @@
     "title": "Gadgets Article 4",
     "description": "Short description of gadgets article 4.",
     "content": "Full content of gadgets article 4.",
-    "image": "https://source.unsplash.com/600x400/?gadgets,4",
+    "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91",
     "category": "gadgets",
     "featured": false,
     "trending": true
@@ -244,7 +244,7 @@
     "title": "Gadgets Article 5",
     "description": "Short description of gadgets article 5.",
     "content": "Full content of gadgets article 5.",
-    "image": "https://source.unsplash.com/600x400/?gadgets,5",
+    "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
     "category": "gadgets",
     "featured": false,
     "trending": false
@@ -254,7 +254,7 @@
     "title": "Gadgets Article 6",
     "description": "Short description of gadgets article 6.",
     "content": "Full content of gadgets article 6.",
-    "image": "https://source.unsplash.com/600x400/?gadgets,6",
+    "image": "https://images.unsplash.com/photo-1517433456452-f9633a875f6f",
     "category": "gadgets",
     "featured": false,
     "trending": true
@@ -264,7 +264,7 @@
     "title": "Gadgets Article 7",
     "description": "Short description of gadgets article 7.",
     "content": "Full content of gadgets article 7.",
-    "image": "https://source.unsplash.com/600x400/?gadgets,7",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
     "category": "gadgets",
     "featured": false,
     "trending": false
@@ -274,7 +274,7 @@
     "title": "Gadgets Article 8",
     "description": "Short description of gadgets article 8.",
     "content": "Full content of gadgets article 8.",
-    "image": "https://source.unsplash.com/600x400/?gadgets,8",
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
     "category": "gadgets",
     "featured": false,
     "trending": true
@@ -284,7 +284,7 @@
     "title": "Gadgets Article 9",
     "description": "Short description of gadgets article 9.",
     "content": "Full content of gadgets article 9.",
-    "image": "https://source.unsplash.com/600x400/?gadgets,9",
+    "image": "https://images.unsplash.com/photo-1512499617640-c2f999223f97",
     "category": "gadgets",
     "featured": false,
     "trending": false
@@ -294,7 +294,7 @@
     "title": "Gadgets Article 10",
     "description": "Short description of gadgets article 10.",
     "content": "Full content of gadgets article 10.",
-    "image": "https://source.unsplash.com/600x400/?gadgets,10",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     "category": "gadgets",
     "featured": false,
     "trending": true
@@ -304,7 +304,7 @@
     "title": "Technews Article 1",
     "description": "Short description of technews article 1.",
     "content": "Full content of technews article 1.",
-    "image": "https://source.unsplash.com/600x400/?technews,1",
+    "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
     "category": "technews",
     "featured": false,
     "trending": false
@@ -314,7 +314,7 @@
     "title": "Technews Article 2",
     "description": "Short description of technews article 2.",
     "content": "Full content of technews article 2.",
-    "image": "https://source.unsplash.com/600x400/?technews,2",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
     "category": "technews",
     "featured": false,
     "trending": true
@@ -324,7 +324,7 @@
     "title": "Technews Article 3",
     "description": "Short description of technews article 3.",
     "content": "Full content of technews article 3.",
-    "image": "https://source.unsplash.com/600x400/?technews,3",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
     "category": "technews",
     "featured": false,
     "trending": false
@@ -334,7 +334,7 @@
     "title": "Technews Article 4",
     "description": "Short description of technews article 4.",
     "content": "Full content of technews article 4.",
-    "image": "https://source.unsplash.com/600x400/?technews,4",
+    "image": "https://images.unsplash.com/photo-1527434000548-1693ccd1d9aa",
     "category": "technews",
     "featured": false,
     "trending": true
@@ -344,7 +344,7 @@
     "title": "Technews Article 5",
     "description": "Short description of technews article 5.",
     "content": "Full content of technews article 5.",
-    "image": "https://source.unsplash.com/600x400/?technews,5",
+    "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91",
     "category": "technews",
     "featured": false,
     "trending": false
@@ -354,7 +354,7 @@
     "title": "Technews Article 6",
     "description": "Short description of technews article 6.",
     "content": "Full content of technews article 6.",
-    "image": "https://source.unsplash.com/600x400/?technews,6",
+    "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
     "category": "technews",
     "featured": false,
     "trending": true
@@ -364,7 +364,7 @@
     "title": "Technews Article 7",
     "description": "Short description of technews article 7.",
     "content": "Full content of technews article 7.",
-    "image": "https://source.unsplash.com/600x400/?technews,7",
+    "image": "https://images.unsplash.com/photo-1517433456452-f9633a875f6f",
     "category": "technews",
     "featured": false,
     "trending": false
@@ -374,7 +374,7 @@
     "title": "Technews Article 8",
     "description": "Short description of technews article 8.",
     "content": "Full content of technews article 8.",
-    "image": "https://source.unsplash.com/600x400/?technews,8",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
     "category": "technews",
     "featured": false,
     "trending": true
@@ -384,7 +384,7 @@
     "title": "Technews Article 9",
     "description": "Short description of technews article 9.",
     "content": "Full content of technews article 9.",
-    "image": "https://source.unsplash.com/600x400/?technews,9",
+    "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
     "category": "technews",
     "featured": false,
     "trending": false
@@ -394,7 +394,7 @@
     "title": "Technews Article 10",
     "description": "Short description of technews article 10.",
     "content": "Full content of technews article 10.",
-    "image": "https://source.unsplash.com/600x400/?technews,10",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
     "category": "technews",
     "featured": false,
     "trending": true
@@ -404,7 +404,7 @@
     "title": "Blogs Article 1",
     "description": "Short description of blogs article 1.",
     "content": "Full content of blogs article 1.",
-    "image": "https://source.unsplash.com/600x400/?blogs,1",
+    "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
     "category": "blogs",
     "featured": false,
     "trending": false
@@ -414,7 +414,7 @@
     "title": "Blogs Article 2",
     "description": "Short description of blogs article 2.",
     "content": "Full content of blogs article 2.",
-    "image": "https://source.unsplash.com/600x400/?blogs,2",
+    "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91",
     "category": "blogs",
     "featured": false,
     "trending": true
@@ -424,7 +424,7 @@
     "title": "Blogs Article 3",
     "description": "Short description of blogs article 3.",
     "content": "Full content of blogs article 3.",
-    "image": "https://source.unsplash.com/600x400/?blogs,3",
+    "image": "https://images.unsplash.com/photo-1517433456452-f9633a875f6f",
     "category": "blogs",
     "featured": false,
     "trending": false
@@ -434,7 +434,7 @@
     "title": "Blogs Article 4",
     "description": "Short description of blogs article 4.",
     "content": "Full content of blogs article 4.",
-    "image": "https://source.unsplash.com/600x400/?blogs,4",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
     "category": "blogs",
     "featured": false,
     "trending": true
@@ -444,7 +444,7 @@
     "title": "Blogs Article 5",
     "description": "Short description of blogs article 5.",
     "content": "Full content of blogs article 5.",
-    "image": "https://source.unsplash.com/600x400/?blogs,5",
+    "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
     "category": "blogs",
     "featured": false,
     "trending": false
@@ -454,7 +454,7 @@
     "title": "Blogs Article 6",
     "description": "Short description of blogs article 6.",
     "content": "Full content of blogs article 6.",
-    "image": "https://source.unsplash.com/600x400/?blogs,6",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
     "category": "blogs",
     "featured": false,
     "trending": true
@@ -464,7 +464,7 @@
     "title": "Blogs Article 7",
     "description": "Short description of blogs article 7.",
     "content": "Full content of blogs article 7.",
-    "image": "https://source.unsplash.com/600x400/?blogs,7",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
     "category": "blogs",
     "featured": false,
     "trending": false
@@ -474,7 +474,7 @@
     "title": "Blogs Article 8",
     "description": "Short description of blogs article 8.",
     "content": "Full content of blogs article 8.",
-    "image": "https://source.unsplash.com/600x400/?blogs,8",
+    "image": "https://images.unsplash.com/photo-1527434000548-1693ccd1d9aa",
     "category": "blogs",
     "featured": false,
     "trending": true
@@ -484,7 +484,7 @@
     "title": "Blogs Article 9",
     "description": "Short description of blogs article 9.",
     "content": "Full content of blogs article 9.",
-    "image": "https://source.unsplash.com/600x400/?blogs,9",
+    "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91",
     "category": "blogs",
     "featured": false,
     "trending": false
@@ -494,7 +494,7 @@
     "title": "Blogs Article 10",
     "description": "Short description of blogs article 10.",
     "content": "Full content of blogs article 10.",
-    "image": "https://source.unsplash.com/600x400/?blogs,10",
+    "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
     "category": "blogs",
     "featured": false,
     "trending": true
