@@ -199,3 +199,50 @@ async function init() {
   await loadArticles();
 }
 init();
+
+async function loadArticles() {
+  const res = await fetch("data/articles.json");
+  const articles = await res.json();
+
+  // Featured
+  const featured = articles.find(a => a.isFeatured);
+  if (featured) {
+    document.getElementById("featured").innerHTML = `
+      <div class="article-card">
+        <img src="${featured.image}" alt="${featured.title}">
+        <h3>${featured.title}</h3>
+        <p>${featured.description}</p>
+        <a href="article.html?slug=${featured.slug}">Read More</a>
+      </div>
+    `;
+  }
+
+  // Trending
+  const trending = articles.filter(a => a.isTrending).slice(0, 5);
+  document.getElementById("trending-list").innerHTML = trending.map(a => `
+    <div class="article-card">
+      <img src="${a.image}" alt="${a.title}">
+      <h3>${a.title}</h3>
+      <p>${a.description}</p>
+      <a href="article.html?slug=${a.slug}">Read More</a>
+    </div>
+  `).join("");
+
+  // Mobiles, Laptops, Gadgets sections
+  const sections = ["mobiles", "laptops", "gadgets"];
+  sections.forEach(cat => {
+    const list = articles.filter(a => a.category === cat).slice(0, 5);
+    const container = document.getElementById(`${cat}-list`);
+    if (container) {
+      container.innerHTML = list.map(a => `
+        <div class="article-card">
+          <img src="${a.image}" alt="${a.title}">
+          <h3>${a.title}</h3>
+          <p>${a.description}</p>
+          <a href="article.html?slug=${a.slug}">Read More</a>
+        </div>
+      `).join("");
+    }
+  });
+}
+loadArticles();
