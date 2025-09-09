@@ -19,7 +19,7 @@ async function loadArticles(){
     const featured=articles.find(a=>a.featured);
     if(featured){
       document.getElementById('featured').innerHTML=`<div class="article-card" onclick="openArticle(${featured.id})">
-      <img src="${featured.image}"><div class="content"><h3>${featured.title}</h3><p>${featured.description}</p></div></div>`;
+      <img src="${featured.image}" alt="${featured.title}" loading="lazy"><div class="content"><h3>${featured.title}</h3><p>${featured.description}</p></div></div>`;
     }
     const trendingList=document.getElementById('trending-list');
     articles.filter(a=>a.trending).slice(0,6).forEach(a=>{
