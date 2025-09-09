@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "title": "Mobiles Article 1",
-    "description": "Short description of mobiles article 1.",
-    "content": "Full content of mobiles article 1.",
-    "image": "https://source.unsplash.com/600x400/?mobiles,1",
-    "category": "mobiles",
-    "featured": true,
-    "trending": false
+  "title": "Mobiles Article 1",
+  "description": "Short description of mobiles article 1.",
+  "content": "Full content of mobiles article 1.",
+  "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+  "category": "mobiles",
+  "featured": true,
+  "trending": true
   },
   {
     "id": 2,
