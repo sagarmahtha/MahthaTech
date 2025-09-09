@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Article</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>MahthaTech - Article</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script defer src="js/main.js"></script>
 </head>
 <body>
-  <div id="site-header"></div>
 
-  <main class="container">
-    <article id="article-content"></article>
-    <section>
+  <div id="header-container"></div>
+
+  <main>
+    <article>
+      <h1 id="article-title"></h1>
+      <img id="article-image" alt="" />
+      <div id="article-content"></div>
+      <button id="share-button" aria-label="Share this article">Share</button>
+    </article>
+
+    <section id="related-articles">
       <h3>Related Articles</h3>
-      <div id="related-articles"></div>
+      <div class="mini-cards-container"></div>
+    </section>
+
+    <section id="explore-more">
+      <h3>Explore More</h3>
+      <div class="mini-cards-container"></div>
     </section>
   </main>
 
-  <div id="site-footer"></div>
-  <script src="js/script.js"></script>
-  <script src="js/article.js"></script>
+  <div id="footer-container"></div>
+
 </body>
 </html>
