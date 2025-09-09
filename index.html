@@ -1,49 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MahthaTech - Home</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script defer src="js/main.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mahtha Tech - Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
-<body>
-
-  <div id="header-container"></div>
-
-  <main>
-    <section id="featured-section">
-      <h2>Featured Posts</h2>
-      <div class="articles-container"></div>
+<body data-page="home">
+  <div id="site-header"></div>
+  <main class="container">
+    <section id="featured" class="featured"></section>
+    <section class="trending">
+      <h2>Trending</h2>
+      <div id="trending-list" class="article-list"></div>
     </section>
-
-    <section id="trending-section">
-      <h2>Trending Posts</h2>
-      <div class="articles-container"></div>
+    <section class="category-preview" id="mobiles-preview">
+      <h2>Mobiles <a href="category.html?cat=mobiles">View All</a></h2>
+      <div class="article-list" id="mobiles-list"></div>
     </section>
-
-    <section id="mobiles-section">
-      <h2>Mobiles</h2>
-      <div class="articles-container"></div>
+    <section class="category-preview" id="laptops-preview">
+      <h2>Laptops <a href="category.html?cat=laptops">View All</a></h2>
+      <div class="article-list" id="laptops-list"></div>
     </section>
-
-    <section id="laptops-section">
-      <h2>Laptops</h2>
-      <div class="articles-container"></div>
-    </section>
-
-    <section id="gadgets-section">
-      <h2>Gadgets</h2>
-      <div class="articles-container"></div>
-    </section>
-
-    <section id="technews-section">
-      <h2>Tech News</h2>
-      <div class="articles-container"></div>
+    <section class="category-preview" id="gadgets-preview">
+      <h2>Gadgets <a href="category.html?cat=gadgets">View All</a></h2>
+      <div class="article-list" id="gadgets-list"></div>
     </section>
   </main>
-
-  <div id="footer-container"></div>
-
+  <div id="site-footer"></div>
+  <script src="js/script.js"></script>
 </body>
 </html>
