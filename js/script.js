@@ -1,5 +1,3 @@
-// js/script.js
-
 // --------- Load Partial (header/footer) ----------
 async function loadPartial(id, url) {
   try {
@@ -14,34 +12,55 @@ async function loadPartial(id, url) {
   }
 }
 
-// --------- Header Handlers ----------
+// --------- Menu Overlay for mobile nav ---------
+function enableMenuOverlay() {
+  let overlay = document.querySelector('.menu-overlay');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.className = 'menu-overlay';
+    document.body.appendChild(overlay);
+  }
+  overlay.onclick = () => {
+    document.querySelector('.main-nav').classList.remove('open');
+    overlay.classList.remove('active');
+    const hamb = document.getElementById('hamburger');
+    if (hamb) hamb.setAttribute('aria-expanded', 'false');
+    if (hamb) hamb.classList.remove('active');
+  };
+}
+
+// --------- Header Handlers (single, merged version) ----------
 function attachHeaderHandlers() {
-  // Hamburger menu toggle
+  // Overlay setup for menu (close when tap outside)
+  enableMenuOverlay();
+  const overlay = document.querySelector('.menu-overlay');
   const hamb = document.getElementById("hamburger");
   const nav = document.querySelector(".main-nav");
+
   if (hamb && nav) {
     hamb.onclick = function () {
       nav.classList.toggle("open");
       hamb.classList.toggle("active");
-      const expanded = hamb.getAttribute("aria-expanded") === "true";
-      hamb.setAttribute("aria-expanded", String(!expanded));
+      const expanded = nav.classList.contains("open");
+      hamb.setAttribute("aria-expanded", String(expanded));
+      if (overlay) overlay.classList.toggle('active', expanded);
     };
   }
 
-  // Theme toggle button
+  // Theme toggle button (default: light mode)
   const themeToggle = document.getElementById("theme-toggle");
   if (themeToggle) {
     themeToggle.onclick = function () {
       document.body.classList.toggle("dark-mode");
       localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
     };
-    // Apply saved theme
+    // Apply saved theme preference
     if (localStorage.getItem("theme") === "dark") {
       document.body.classList.add("dark-mode");
     }
   }
 
-  // Instant search
+  // Instant search integration
   const searchInput = document.getElementById("searchInput");
   const searchResults = document.getElementById("searchResults");
   if (searchInput && searchResults) {
@@ -76,7 +95,7 @@ function attachHeaderHandlers() {
         }
       }, 200);
     });
-    // Optional: clear search results when input loses focus after a short delay
+    // Clear search results when input loses focus after a short delay
     searchInput.addEventListener("blur", () => setTimeout(() => (searchResults.innerHTML = ""), 350));
   }
 }
@@ -192,4 +211,3 @@ async function init() {
 }
 
 init();
-  
