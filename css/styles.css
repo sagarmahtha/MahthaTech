@@ -94,7 +94,7 @@ a:hover, a:focus {
 
 /* Search bar */
 #searchInput {
-  height: 30px;
+  height: 40px;
   display: flex;
   align-items: center;
   background: var(--color-search-bg);
