@@ -53,8 +53,7 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-/* ==== Header (professional look) ==== */ 
-/*
+/* ==== Header (refined professional look) ==== */
 .site-header {
   background: linear-gradient(90deg, var(--color-header) 65%, var(--color-primary) 120%);
   border-bottom: 2.5px solid var(--color-border);
@@ -62,74 +61,98 @@ a:hover, a:focus {
   position: sticky;
   top: 0;
   z-index: 1020;
+  margin-bottom: 50px;        /* header ke neeche gap */
 }
 .site-header .inner {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1em 1.2em;
-  max-width: 1240px;
-  margin: 0 auto;
-}
-.logo a {
-  display: flex;
-  align-items: center;
-  gap: .5em;
-  font-weight: 700;
-  font-size: 2.5rem;
-  letter-spacing: 0.5px;   
-}    */
-/* ==== Header (professional look with fixed alignment) ==== */
-.site-header {
-  background: linear-gradient(90deg, var(--color-header) 65%, var(--color-primary) 120%);
-  border-bottom: 2.5px solid var(--color-border);
-  box-shadow: 0 8px 32px 0 var(--color-card-shadow);
-  position: sticky;
-  top: 0;
-  z-index: 1020;
-}
-.site-header .inner {
-  display: flex;
-  align-items: center;        /* sab vertical center me */
+  align-items: center;        /* vertical center */
   justify-content: space-between;
   padding: 1.2em 1.5em;       /* top-bottom spacing balance */
   max-width: 1240px;
   margin: 0 auto;
 }
 
-/* Logo bigger and thoda niche */
+/* Logo double size */
 .logo a {
   display: flex;
   align-items: center;
   gap: .5em;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 3rem;            /* double size logo */
   letter-spacing: 0.5px;
-  margin-top: 4px;            /* upar se halka niche */
+  margin-top: 4px;
 }
 
-/* Right side actions (search + toggle + menu) thoda upar */
+/* Right side actions (search + toggle + menu) */
 .header-actions {
   display: flex;
   align-items: center;
   gap: 1rem;
   position: relative;
-  margin-bottom: 4px;         /* neeche se thoda upar */
+  margin-bottom: 4px;
 }
 
-/* Search bar fix */
+/* Search bar */
 #searchInput {
-  height: 40px;               /* proper height */
+  height: 40px;
   display: flex;
   align-items: center;
+  background: var(--color-search-bg);
+  color: var(--color-text);
+  border: 1.68px solid var(--color-search-border);
+  border-radius: 6px;
+  padding: 0.47em 1em;
+  font-size: 1em;
+  min-width: 145px;
+  outline: none;
+  transition: border 0.19s;
 }
-
+#searchInput:focus {
+  border-color: var(--color-primary);
+}
+#searchResults {
+  position: absolute;
+  top: 115%;
+  left: 0;
+  background: var(--color-search-bg);
+  width: 270px;
+  border: 1.4px solid var(--color-search-border);
+  border-radius: 9px;
+  box-shadow: 0 8px 36px 0 rgba(60,104,192,0.08);
+  padding: 0;
+  z-index: 1201;
+  font-size: 1em;
+  display: none;
+}
+#searchResults:not(:empty) { display: block; }
+#searchResults:empty {
+  border: none;
+  box-shadow: none;
+  display: none;
+}
+.search-result-item {
+  padding: 0.91em 1.06em;
+  border-bottom: 1px solid var(--color-search-border);
+  background: var(--color-search-bg);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background 0.17s, color 0.17s;
+  font-size: 1em;
+}
+.search-result-item:last-child { border-bottom:none; }
+.search-result-item:hover,
+.search-result-item:focus {
+  background: var(--color-search-hover);
+  color: var(--color-primary);
+}
 
 /* ====== Stylish Menu Bar ====== */
 .main-nav {
   display: flex;
   gap: 1.4rem;
   background: none;
+  position: relative;
+  z-index: 10;
 }
 .main-nav a {
   font-size: 1rem;
@@ -217,81 +240,16 @@ a:hover, a:focus {
 }
 
 /* ===== Menu overlay for tap outside close ===== */
-
-
-/* ==== Header Actions ==== */
-/*
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  position: relative;
-}
-*/
-
-/* ===== Theme Toggle ===== */
-#theme-toggle {
-  background: transparent;
-  border: none;
-  font-size: 1.28rem;
-  color: var(--color-primary);
-  cursor: pointer;
-  transition: color 0.28s;
-}
-#theme-toggle:hover,
-#theme-toggle:focus {
-  color: #162e7a;
-}
-
-/* ==== Search ==== */
-#searchInput {
-  background: var(--color-search-bg);
-  color: var(--color-text);
-  border: 1.68px solid var(--color-search-border);
-  border-radius: 6px;
-  padding: 0.47em 1em;
-  font-size: 1em;
-  min-width: 145px;
-  outline: none;
-  transition: border 0.19s;
-}
-#searchInput:focus {
-  border-color: var(--color-primary);
-}
-#searchResults {
-  position: absolute;
-  top: 115%;
-  left: 0;
-  background: var(--color-search-bg);
-  width: 270px;
-  border: 1.4px solid var(--color-search-border);
-  border-radius: 9px;
-  box-shadow: 0 8px 36px 0 rgba(60,104,192,0.08);
-  padding: 0;
-  z-index: 1201;
-  font-size: 1em;
+.menu-overlay {
   display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 5;
 }
-#searchResults:not(:empty) { display: block; }
-#searchResults:empty {
-  border: none;
-  box-shadow: none;
-  display: none;
-}
-.search-result-item {
-  padding: 0.91em 1.06em;
-  border-bottom: 1px solid var(--color-search-border);
-  background: var(--color-search-bg);
-  color: var(--color-text);
-  cursor: pointer;
-  transition: background 0.17s, color 0.17s;
-  font-size: 1em;
-}
-.search-result-item:last-child { border-bottom:none; }
-.search-result-item:hover,
-.search-result-item:focus {
-  background: var(--color-search-hover);
-  color: var(--color-primary);
+.menu-overlay.active {
+  display: block;
 }
 
 /* ==== Container ===== */
@@ -381,7 +339,7 @@ a:hover, a:focus {
     align-items: flex-start;
   }
   .logo a {
-    font-size: 1.07rem;
+    font-size: 2rem;   /* mobile me thoda chhota */
   }
   .article-list {
     grid-template-columns: 1fr;
@@ -411,23 +369,3 @@ body.dark-mode .footer {
 
 /* ==== Accessibility improvements ==== */
 :focus:not(:focus-visible) { outline: none; }
-
-
-/* ==== Fixed Overlay and Nav Z-index ==== */
-
-.menu-overlay {
-  display: none;
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.5);
-  z-index: 5;
-}
-.menu-overlay.active {
-  display: block;
-}
-
-.main-nav {
-  position: relative;
-  z-index: 10;
-}
