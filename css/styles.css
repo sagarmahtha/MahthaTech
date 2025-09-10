@@ -53,7 +53,8 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-/* ==== Header (professional look) ==== */
+/* ==== Header (professional look) ==== */ 
+/*
 .site-header {
   background: linear-gradient(90deg, var(--color-header) 65%, var(--color-primary) 120%);
   border-bottom: 2.5px solid var(--color-border);
@@ -76,8 +77,53 @@ a:hover, a:focus {
   gap: .5em;
   font-weight: 700;
   font-size: 2.5rem;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.5px;   
+}    */
+/* ==== Header (professional look with fixed alignment) ==== */
+.site-header {
+  background: linear-gradient(90deg, var(--color-header) 65%, var(--color-primary) 120%);
+  border-bottom: 2.5px solid var(--color-border);
+  box-shadow: 0 8px 32px 0 var(--color-card-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1020;
 }
+.site-header .inner {
+  display: flex;
+  align-items: center;        /* sab vertical center me */
+  justify-content: space-between;
+  padding: 1.2em 1.5em;       /* top-bottom spacing balance */
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* Logo bigger and thoda niche */
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 0.5px;
+  margin-top: 4px;            /* upar se halka niche */
+}
+
+/* Right side actions (search + toggle + menu) thoda upar */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  margin-bottom: 4px;         /* neeche se thoda upar */
+}
+
+/* Search bar fix */
+#searchInput {
+  height: 40px;               /* proper height */
+  display: flex;
+  align-items: center;
+}
+
 
 /* ====== Stylish Menu Bar ====== */
 .main-nav {
@@ -174,12 +220,14 @@ a:hover, a:focus {
 
 
 /* ==== Header Actions ==== */
+/*
 .header-actions {
   display: flex;
   align-items: center;
   gap: 1rem;
   position: relative;
 }
+*/
 
 /* ===== Theme Toggle ===== */
 #theme-toggle {
